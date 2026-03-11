@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>M2 Agency</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", sans-serif; color: #333; line-height: 1.8; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Nav */
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 16px 40px; background: #fff; position: sticky; top: 0; z-index: 10; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    nav .logo { font-size: 18px; font-weight: 700; letter-spacing: 1px; }
+    nav ul { list-style: none; display: flex; gap: 28px; font-size: 14px; }
+    nav ul a:hover { opacity: 0.6; }
+
+    /* Hero */
+    .hero { display: flex; align-items: center; justify-content: center; min-height: 50vh; background: linear-gradient(135deg, #f5f5f5 50%, #e8e8e8 100%); padding: 60px 40px; gap: 60px; flex-wrap: wrap; }
+    .hero h1 { font-size: 40px; font-weight: 300; letter-spacing: 3px; }
+
+    /* Section */
+    section { padding: 80px 40px; max-width: 960px; margin: 0 auto; }
+    .section-title { text-align: center; font-size: 28px; font-weight: 300; letter-spacing: 2px; margin-bottom: 50px; }
+    .section-title::after { content: ""; display: block; width: 40px; height: 2px; background: #333; margin: 16px auto 0; }
+
+    /* Services */
+    .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+    .service h3 { font-size: 18px; margin-bottom: 12px; font-weight: 600; }
+    .service h4 { font-size: 15px; margin: 20px 0 6px; font-weight: 600; color: #555; }
+    .service p { font-size: 14px; color: #666; }
+
+    /* Company */
+    .company-section { background: #4a6fa5; color: #fff; padding: 80px 40px; }
+    .company-section .section-title { color: #fff; }
+    .company-section .section-title::after { background: #fff; }
+    .company-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 960px; margin: 0 auto; }
+    .company-card { background: rgba(255,255,255,0.12); padding: 28px 20px; text-align: center; border-radius: 4px; }
+    .company-card dt { font-size: 13px; margin-bottom: 10px; opacity: 0.85; }
+    .company-card dd { font-size: 15px; font-weight: 500; }
+
+    /* Contact */
+    .contact-section { padding: 80px 40px; max-width: 640px; margin: 0 auto; }
+    .contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .contact-form .full { grid-column: 1 / -1; }
+    .contact-form label { font-size: 13px; color: #555; display: block; margin-bottom: 4px; }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 10px 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; font-family: inherit; }
+    .contact-form textarea { height: 120px; resize: vertical; }
+    .contact-form button { grid-column: 1 / -1; padding: 14px; background: #333; color: #fff; border: none; border-radius: 4px; font-size: 15px; cursor: pointer; }
+    .contact-form button:hover { background: #555; }
+
+    /* Footer */
+    footer { text-align: center; padding: 30px 40px; background: #222; color: #aaa; font-size: 13px; }
+    footer a { color: #ccc; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero { min-height: 30vh; padding: 40px 20px; }
+      .hero h1 { font-size: 28px; }
+      .services-grid { grid-template-columns: 1fr; gap: 40px; }
+      .company-grid { grid-template-columns: 1fr 1fr; }
+      section, .contact-section { padding: 60px 20px; }
+      .contact-form { grid-template-columns: 1fr; }
+      nav { padding: 12px 20px; }
+      nav ul { gap: 16px; font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">M2 Agency</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Service</a></li>
+    <li><a href="#company">Company</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero" id="home">
+  <h1>M2 Agency</h1>
+</div>
+
+<section id="services">
+  <h2 class="section-title">Services</h2>
+  <div class="services-grid">
+    <div class="service">
+      <h3>ウェブサイト事業</h3>
+      <p>クライアントのウェブサイトを効果的に運営し、魅力的なデザインに改善するための包括的なサービスを提供しています。ウェブサイトの企画、制作、管理、更新、改善に関するあらゆるニーズに対応し、オンラインプレゼンスを強化します。</p>
+      <h4>ウェブサイト制作</h4>
+      <p>クライアントのビジョンに基づき、魅力的で効果的なウェブサイトを制作することを専門としています。ユーザビリティとSEO対策を重視し、ウェブサイトの企画立案から制作までを丁寧に行います。</p>
+      <h4>ウェブサイト運営</h4>
+      <p>ウェブサイトの定期的な更新と管理、ページの追加や修正、画像や動画の更新など必要な変更を迅速に対応します。</p>
+      <h4>ターゲット市場</h4>
+      <p>ウェブサイトを持つ企業や個人事業主、ブログ運営者など、オンラインプレゼンスを強化したい顧客を対象にしています。</p>
+    </div>
+    <div class="service">
+      <h3>記事制作</h3>
+      <p>提携ライターと海外在住ライターの多岐にわたる経験と専門知識を生かし、クライアントのニーズに適したマーケティング戦略の立案、取材活動、執筆業務、そして記事の品質管理までを包括的に提供しています。</p>
+      <h4>記事作成サービス</h4>
+      <p>SEOに対応したウェブコンテンツの制作やブログ記事、SNSコンテンツ、ニュースレターなど幅広いコンテンツ形式で記事を作成します。</p>
+      <h4>編集・校正サービス</h4>
+      <p>記事の校正、編集、スタイルの統一など、プロフェッショナルな編集サービスを提供します。</p>
+      <h4>コンテンツマーケティング戦略の立案</h4>
+      <p>ターゲット層に合わせたコンテンツマーケティング戦略の立案と実行支援を行います。</p>
+    </div>
+  </div>
+</section>
+
+<div class="company-section" id="company">
+  <h2 class="section-title">Company</h2>
+  <div class="company-grid">
+    <div class="company-card">
+      <dl><dt>会社名</dt><dd>株式会社M2 Agency</dd></dl>
+    </div>
+    <div class="company-card">
+      <dl><dt>代表者</dt><dd>代表取締役 森實将</dd></dl>
+    </div>
+    <div class="company-card">
+      <dl><dt>設立日</dt><dd>2023年6月13日</dd></dl>
+    </div>
+    <div class="company-card">
+      <dl><dt>所在地</dt><dd>東京都目黒区中目黒4-8-25</dd></dl>
+    </div>
+  </div>
+</div>
+
+<div class="contact-section" id="contact">
+  <h2 class="section-title">Contact</h2>
+  <form class="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+    <div>
+      <label>名前 *</label>
+      <input type="text" name="name" required placeholder="名前を入力してください">
+    </div>
+    <div>
+      <label>メールアドレス *</label>
+      <input type="email" name="email" required placeholder="メールアドレスを入力">
+    </div>
+    <div>
+      <label>電話番号</label>
+      <input type="tel" name="phone" placeholder="電話番号を入力してください">
+    </div>
+    <div>
+      <label>住所</label>
+      <input type="text" name="address" placeholder="住所">
+    </div>
+    <div class="full">
+      <label>件名</label>
+      <input type="text" name="subject" placeholder="件名を入力してください">
+    </div>
+    <div class="full">
+      <label>メッセージ</label>
+      <textarea name="message" placeholder="メッセージを入力..."></textarea>
+    </div>
+    <button type="submit">送信</button>
+  </form>
+</div>
+
+<footer>
+  <p><strong>M2 Agency</strong></p>
+  <p><a href="mailto:info@m2-agency.net">info@m2-agency.net</a></p>
+</footer>
+
+</body>
+</html>
